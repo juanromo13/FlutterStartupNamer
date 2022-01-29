@@ -14,11 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Startup Name Generator',
       theme: ThemeData(
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black
-        )
-      ),
+          appBarTheme: const AppBarTheme(
+              backgroundColor: Colors.white, foregroundColor: Colors.black)),
+      darkTheme: ThemeData(brightness: Brightness.dark),
       initialRoute: 'home',
       routes: {
         'home': (_) => const HomeScreen(),
